@@ -2,9 +2,6 @@ name: Deploy Website
 
 on: [pull_request]
 
-env:
-  GITHUB_PR_NUMBER: ${{github.event.pull_request.number}}
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +12,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: |
-          echo "$GITHUB_PR_NUMBER"
       - run: npm install -g surge
-      - run: surge ./ surge-deploy-${ GITHUB_PR_NUMBER }.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ surge-deploy-${{github.event.pull_request.number}}.surge.sh --token ${{ secrets.SURGE_TOKEN }}

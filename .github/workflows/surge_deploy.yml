@@ -18,4 +18,4 @@ jobs:
       - run: |
           echo "$GITHUB_PR_NUMBER"
       - run: npm install -g surge
-      - run: surge ./ surge-deploy-${{GITHUB_PR_NUMBER}}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ surge-deploy-${ GITHUB_PR_NUMBER }.surge.sh --token ${{ secrets.SURGE_TOKEN }}

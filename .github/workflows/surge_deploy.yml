@@ -1,6 +1,6 @@
 name: Deploy Website
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g surge
-      - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ surge-deploy-${{github.event.pull_request.number}}.surge.sh --token ${{ secrets.SURGE_TOKEN }}

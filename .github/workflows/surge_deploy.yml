@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install -g surge
-      - run: surge ./index.html surge-deploy-${{github.event.pull_request.number}}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ surge-deploy-${{github.event.pull_request.number}}.surge.sh --token ${{ secrets.SURGE_TOKEN }}

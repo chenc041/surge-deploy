@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/components/CodeBlock/index.js"],"names":[],"mappings":"4FACA,iCAEe,cAAf","file":"16-d8e975a0dcd1f4e86aee.js","sourcesContent":["import React from 'react';\nimport Blocks from '@douyinfe/semi-site-markdown-blocks';\nimport '@douyinfe/semi-site-markdown-blocks/dist/index.css';\nexport default Blocks.code;"],"sourceRoot":""}

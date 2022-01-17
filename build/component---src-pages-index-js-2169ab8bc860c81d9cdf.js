@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{RXBc:function(e,t,c){"use strict";c.r(t);var a=c("q1tI"),n=c.n(a),l=c("Wbzz"),o=c("j67S"),i=c("vrFN");t.default=function(e){e.location;return Object(a.useEffect)((function(){var e=localStorage.getItem("locale");console.log("redirect",e),e?Object(l.c)("/".concat(e)):Object(l.c)("/zh-CN")})),n.a.createElement("div",{className:"semi-site-page"},n.a.createElement(i.a,{lang:"zh-CN",title:"Semi Design"}),n.a.createElement(o.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-2169ab8bc860c81d9cdf.js.map
